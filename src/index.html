@@ -8,6 +8,7 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </style>
   </head>
   <body>
     <div class="main">
@@ -25,7 +26,7 @@
       imageClass.append(imageElement);
       document.querySelector(".image").addEventListener("click", (e) => {
         const tgt = e.target;
-        tgt.classList.toggle('zoomed')
+        tgt.style.transform = "scale(2)";
       })
     </script>
   </body>
