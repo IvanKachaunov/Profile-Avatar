@@ -18,15 +18,14 @@
     <script>
       let imageClass = document.createElement("div");
       let imageElement = document.createElement("img");
-      // let certainImage = document.querySelector(".image");
       let gettingMainElement = document.querySelector(".main")
       imageClass.classList.add("image")
+      
       imageElement.setAttribute("src", "./images/favicon.ico");
       gettingMainElement.append(imageClass);
-      imageClass.append(imageElement);
-      imageElement.addEventListener("click", (e) => {
-        const tgt = e.target;
-        tgt.style.transform = "scale(2)";
+      document.querySelector(".image").append(imageElement);
+      document.querySelector(".image").addEventListener("click", () => {
+        imageElement.style.transform = "scale(2)";
       })
     </script>
   </body>
