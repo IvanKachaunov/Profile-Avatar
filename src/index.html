@@ -24,7 +24,7 @@
       imageElement.setAttribute("src", "./images/favicon.ico");
       gettingMainElement.append(imageClass);
       imageClass.append(imageElement);
-      document.querySelector(".image").addEventListener("click", (e) => {
+      imageElement.addEventListener("click", (e) => {
         const tgt = e.target;
         tgt.style.transform = "scale(2)";
       })
