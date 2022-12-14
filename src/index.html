@@ -14,5 +14,19 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+      let imageClass = document.createElement("div");
+      let imageElement = document.createElement("img");
+      let gettingMainElement = document.querySelector(".main")
+      imageClass.classList.add("image")
+      gettingMainElement.append(imageClass);
+      imageElement.setAttribute("src", "./images/favicon.ico");
+      imageClass.append(imageElement);
+      
+    imageElement.addEventListener('click', function(e) {
+      const tgt = e.target;
+      tgt.classList.toggle('zoomed')
+    })
+    </script>
   </body>
 </html>
