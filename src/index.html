@@ -17,13 +17,13 @@
     <script>
       let imageClass = document.createElement("div");
       let imageElement = document.createElement("img");
-      let certainImage = document.querySelector(".image");
+      // let certainImage = document.querySelector(".image");
       let gettingMainElement = document.querySelector(".main")
       imageClass.classList.add("image")
-      gettingMainElement.append(imageClass);
       imageElement.setAttribute("src", "./images/favicon.ico");
+      gettingMainElement.append(imageClass);
       imageClass.append(imageElement);
-      certainImage.addEventListener("click", (e) => {
+      document.querySelector(".image").addEventListener("click", (e) => {
         const tgt = e.target;
         tgt.classList.toggle('zoomed')
       })
